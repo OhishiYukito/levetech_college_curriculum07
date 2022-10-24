@@ -10,15 +10,12 @@
 
     </head>
     <body class="antialiased">
-        <h1>Blog name</h1>
-        <div class='posts'>
-            @foreach ($posts as $post)
-            <div class='post'>
-                <a href="/posts/{{$post->id}}">{{$post->title}}</a>
-                <p class='body'>{{$post->body}}</p>
-            </div>
-            @endforeach
-            <div class='paginate'>{{$posts->links()}}</div>
+        <h1 class='title'>{{$post->title}}</h1>
+        <div class="content">
+            <p class='body'>{{$post->body}}</p>
+        </div>
+        <div class='footer'>
+            <a href= "/posts" >go back to list</a>
         </div>
     </body>
 </html>
