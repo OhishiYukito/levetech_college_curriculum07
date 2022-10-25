@@ -19,6 +19,8 @@ Route::get('/posts/{post}', [PostController::class, 'show']);
 
 Route::get('/', [PostController::class, 'index']);
 
+Route::post('/posts', [PostController::class, 'store']);
+
 /* Route::get('/posts', function(){
     return view('posts/index');
 });
