@@ -15,7 +15,7 @@
             <p class='body'>{{$post->body}}</p>
         </div>
         <div class='footer'>
-            <a href= "/posts" >go back to list</a>
+            <a href= "/" >go back to list</a>
         </div>
     </body>
 </html>
