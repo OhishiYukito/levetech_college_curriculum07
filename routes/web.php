@@ -23,6 +23,7 @@ Route::get('/', [PostController::class, 'index']);
 
 Route::post('/posts', [PostController::class, 'store']);
 
+Route::put('/posts/{post}', [PostController::class, 'update']);
 /* Route::get('/posts', function(){
     return view('posts/index');
 });
