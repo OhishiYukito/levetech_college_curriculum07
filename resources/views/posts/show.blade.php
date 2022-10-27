@@ -14,6 +14,9 @@
         <div class="content">
             <p class='body'>{{$post->body}}</p>
         </div>
+        <div class='go_to_edit'>
+            <a href='/posts/{{$post->id}}/edit'>edit</a>
+        </div>
         <div class='footer'>
             <a href= "/" >go back to list</a>
         </div>
