@@ -18,7 +18,7 @@
             <a href='/posts/{{$post->id}}/edit'>edit</a>
         </div>
         <div class='footer'>
-            <a href= "/" >go back to list</a>
+            <a href= "/posts" >go back to list</a>
         </div>
     </body>
 </html>
