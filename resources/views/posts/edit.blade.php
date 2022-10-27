@@ -23,7 +23,7 @@
                 <input type="submit" value="保存" />
         </form>
         <div class="footer">
-            <a href="/">投稿一覧へ</a>
+            <a href="/posts">投稿一覧へ</a>
         </div>
     </body>
 </html>
