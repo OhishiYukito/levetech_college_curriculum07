@@ -16,6 +16,12 @@
             <div class='post'>
                 <a href="/posts/{{$post->id}}">{{$post->title}}</a>
                 <p class='body'>{{$post->body}}</p>
+                <form action="/posts/{{$post->id}}" method='post' id='form_{{$post->id}}'>
+                    @csrf
+                    @method('DELETE')
+                    <button type='button' onclick="deletePost({{$post->id}})" >delete</button>
+                </form>
+                <br><br>
             </div>
             @endforeach
             <div class='paginate'>{{$posts->links()}}</div>
@@ -23,3 +29,14 @@
         </div>
     </body>
 </html>
+
+<script>
+    function deletePost(id)
+    {
+        value = window.confirm("このページは削除されます。\n本当によろしいですか？");
+        
+        if (value){
+            document.getElementById(`form_${id}`).submit();
+        }
+    }
+</script>
